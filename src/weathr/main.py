@@ -1,7 +1,7 @@
-from api import fetchForecast
-from cli import parseArgs
-from formatter import formatForecast
-from render import renderForecast
+from .api import fetchForecast
+from .cli import parseArgs
+from .formatter import formatForecast
+from .render import renderForecast
 
 def main():
     # Parse CLI arguments

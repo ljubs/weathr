@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weathr"
+version = "0.1.0"
+description = "A simple CLI tool to fetch and display weather data using a weather API."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.32", "rich>=13"]
+
+[project.scripts]
+weathr = "weathr.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
